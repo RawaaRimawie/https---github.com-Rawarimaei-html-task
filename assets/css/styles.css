@@ -187,6 +187,10 @@ nav.table_nav {
     text-align: left;
 }
 
+.nav > li a:hover{
+    text-decoration: none!important;
+}
+
 .hr.h {
     width: 2px;
     height: 55vh;
@@ -290,7 +294,7 @@ strong {
 img {
     vertical-align: middle;
   }  
-  
+
 .img1 {
     height:"700px";
 }
