@@ -287,9 +287,14 @@ strong {
     }
 }
 
-.logo {
-    width: 150px;
-    height: auto; 
-    display: block;
-    margin: 0 auto;
+img {
+    vertical-align: middle;
+  }  
+  
+.img1 {
+    height:"700px";
+}
+
+.img2{
+    width:"600px/";
 }
