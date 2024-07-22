@@ -229,3 +229,21 @@ img {
 .img2{
     width:"600px/";
 }
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .hea, .table_nav .container {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .container {
+      width: 80%;
+      padding: 0;
+    }
+    .hea {
+      width: 100%;
+    }
+  }
