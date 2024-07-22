@@ -1,50 +1,37 @@
-.container {
-    padding-right: 270px;
-    padding-left: 270px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 
+
+/* Body */
 body {
     font-size: 1em;
+    margin: 0px;
+    line-height: 1.8em;
+    font-weight: 300;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-seri;
+    color: #333;
+    background-color: #fff;
 }
 
 
 
-.h1,
-.h2,
-.h3,
-h1,
-h2,
-h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
+/* Header and Footer*/
 
 body header {
     background: #353b56;
 }
 
-header,
-footer {
+header,footer {
     color: #fff;
     padding: 1em 2em;
 }
 
-header a,
-header a:focus,
-header a:hover {
+
+header, footer, h1, h2, h3, h4, h5, h6, nav {
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+header a, header a:focus, header a:hover {
     color: #fff;
 }
 
@@ -57,146 +44,167 @@ a:hover {
     text-decoration: underline;
 }
 
-a {
-    background-color: transparent;
-    color: #337ab7;
-    text-decoration: none;
+.nav > li a:hover{
+    text-decoration: none!important;
 }
+
 
 
 header>div {
     float: right;
 }
 
-header,
-footer {
-    color: #fff;
-    padding: 1.5em 3em;
+/* nav */
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
 }
 
-header a,
-header a:focus,
-header a:hover {
-    color: #fff;
-}
-
-footer.footer-margin {
-    text-align: left;
-    color: #999;
-    background: #fff;
-    padding: 0 1em;
-}
-
-footer.footer-margin>div {
-    font-weight: normal;
-    font-size: 85%;
-    line-height: 1.33;
-}
-
-header {
-    unicode-bidi: isolate;
-}
-
-nav>li {
+.nav > li {
     position: relative;
     display: block;
 }
 
-body .nav>li.navli>a {
+body .nav >li.navli > a {
     background-color: #64c9dc;
     border-right: 5px solid #0faccb;
 }
 
 
-.nav>li>a {
-    padding: 0.22em 0.9em 0.6em 1em;
+.nav >li.navli >a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav >li >a {
+    padding: 0.5em 0.5em 0.5em 2em;
     color: #999;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.nav>li>a {
+    display: block;
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.3em;
 }
 
-.nav>li>a:hover {
+.nav >li >a:hover {
     background-color: #eeeeee;
-    color: #333;
 }
 
-.nav>li.navli>a {
-    color: #fff;
-    background-color: #333;
-    text-decoration: none;
+
+
+
+@media (min-width: 768px) {
+    nav.table_nav {
+        position: fixed;
+        padding: 0;
+    }
 }
 
-.nav {
-    list-style-type: none;
+@media (min-width: 768px) {
+    .table_nav{
+        width: 16.66666667%;
+    }
 }
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
+
+/* ?main */
+.container {
+    padding-right: 250px;
+    padding-left: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* main h1 */
+
+#lab1{
+    border-bottom: 1px solid #0FACCB;
+    margin-top: 1em;
+    padding-bottom: 5px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 1px;
 }
 
-.nav {
-    padding-left: 0;
-    margin-bottom: 2;
-    list-style: none;
-}
-
-ol,
-ul {
-    margin-top: 0;
-}
-
-ul {
+p {
     display: block;
-    list-style-type: disc;
-    margin-block-start: 0em;
+    margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 1px;
-    padding-inline-start: 40px;
+    margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
 
-blockquote {
+p.bar1 {
+    border: 1px solid rgb(160, 159, 129);
+    padding: 0.5em 1em;
+    background: rgb(250, 255, 226) none repeat scroll 0% 0%;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+
+/* H2 */
+.h2, h2 {
+    font-size: 30px;
+}
+
+.h1, h1 {
+    font-size: 36px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
     margin-bottom: 10px;
-    font-size: inherit;
-    font-weight: inherit;
 }
 
-nav.table_nav {
-    vertical-align: top;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
 }
 
-nav.table_nav {
-    padding: 1px;
+*{
+    box-sizing: border-box;
 }
 
-nav.table_nav {
-    padding-right: 1em;
-    padding-left: 0em;
+ol,ul {
+     margin-top: 0;
+     margin-bottom: 10px;
+
 }
 
-nav.table_nav {
-    text-align: left;
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
-.nav > li a:hover{
-    text-decoration: none!important;
+img {
+    vertical-align: middle;
 }
 
-.hr.h {
-    width: 2px;
-    height: 55vh;
-    background-color: blue;
+img {
+    border: 0;
 }
 
+
+
+
+/* footer */
 body footer {
     background: #999;
 }
@@ -210,92 +218,11 @@ footer {
     padding: 20px 0px;
 }
 
-header,
-footer,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav {
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-}
-
-.container.lab1 {
-    border-bottom: 1px solid #0faccb;
-    margin-top: 1em;
-    padding-bottom: 5px;
-}
-
-.h1,
-h1 {
-    font-size: 36px;
-}
-
-p.bar1 {
-    border: 1px solid rgb(160, 159, 129);
-    padding: 0.5em 1em;
-    background: rgb(250, 255, 226) none repeat scroll 0% 0%;
-}
-
-p {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-p {
-    margin: 0 0 0px;
-}
-
-.h2,
-h2 {
-    font-size: 30px;
-}
-
-b,
-strong {
-    font-weight: 700;
-}
-
-@media (min-width: 768px) {
-    nav.table_nav {
-        position: fixed;
-        padding: 0;
-    }
-}
-
-@media print {
-    nav.table_nav {
-        position: absolute;
-    }
-}
-
-@media (min-width: 768px) {
-    footer.footer-margin {
-        padding: 0 1em 1em 2em;
-        position: absolute;
-        bottom: 4em;
-    }
-}
-
-@media print {
-    footer.footer-margin {
-        position: static;
-        width: 100%;
-    }
-}
-
 img {
     vertical-align: middle;
   }  
 
-.img1 {
+.imgdog {
     height:"700px";
 }
 
