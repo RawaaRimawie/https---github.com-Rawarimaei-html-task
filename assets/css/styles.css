@@ -154,7 +154,7 @@ b, strong {
 }
 
 
-/* H2 */
+/* H1...*/
 .h2, h2 {
     font-size: 30px;
 }
@@ -193,15 +193,6 @@ hr {
     border-top: 1px solid #eee;
 }
 
-img {
-    vertical-align: middle;
-}
-
-img {
-    border: 0;
-}
-
-
 
 
 /* footer */
@@ -218,6 +209,8 @@ footer {
     padding: 20px 0px;
 }
 
+/* img */
+
 img {
     vertical-align: middle;
   }  
@@ -229,6 +222,17 @@ img {
 .img2{
     width:"600px/";
 }
+
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+
 
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
